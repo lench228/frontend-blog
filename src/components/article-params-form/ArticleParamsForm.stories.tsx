@@ -1,8 +1,6 @@
 import { ArticleParamsForm } from 'components/article-params-form/ArticleParamsForm';
 import { Meta, StoryObj } from '@storybook/react';
-import { ArticleState } from 'src/constants/articleProps';
 import { useState } from 'react';
-import { set } from 'husky';
 
 const meta: Meta<typeof ArticleParamsForm> = {
 	component: ArticleParamsForm,
@@ -14,7 +12,7 @@ type Story = StoryObj<typeof ArticleParamsForm>;
 export const ArticleParamsFormStory: Story = {
 	render: () => {
 		const handleFormSubmit = () => {
-			console.log(props);
+			console.log('form submitted');
 		};
 		const handleFormReset = () => {
 			console.log('Данные обновлены');
